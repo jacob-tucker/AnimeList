@@ -6,6 +6,7 @@ import aotwallpaper from "./wallpapers/aotpic.jpeg"
 import jujutsukaisenwallpaper from "./wallpapers/jujutsukaisenpic.jpg"
 import mushokutenseiwallpaper from "./wallpapers/mushokutenseipic.jpeg"
 import vinlandsagawallpaper from "./wallpapers/vinlandsagapic.jpeg"
+import demonslayerwallpaper from "./wallpapers/demonslayerpic.jpg"
 
 var classNames = require('classnames');
 
@@ -49,6 +50,7 @@ function App() {
           <option value="jujutsukaisen">Jujutsu Kaisen</option>
           <option value="mushokutensei">Mushoku Tensei</option>
           <option value="vinlandsaga">Vinland Saga</option>
+          <option value="demonslayer">Demon Slayer</option>
         </select>
       </div>
       <div className="List">
@@ -95,6 +97,15 @@ function App() {
             <p className="Rating">8/10</p>
             <h1 style={{ color: "yellow" }}>Vinland Saga</h1>
             <p className="Reasoning">Deep themes and great character arcs.</p>
+          </div>
+        </div>
+        {/* Demon Slayer */}
+        <div className="ListElement" id="demonslayer">
+          <img src={demonslayerwallpaper} />
+          <div className="Details">
+            <p className="Rating">8/10</p>
+            <h1 style={{ color: "blue" }}>Demon Slayer</h1>
+            <p className="Reasoning">Beautiful animation.</p>
           </div>
         </div>
       </div>
