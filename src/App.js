@@ -8,7 +8,7 @@ import mushokutenseiwallpaper from "./wallpapers/mushokutenseipic.jpeg"
 import vinlandsagawallpaper from "./wallpapers/vinlandsagapic.jpeg"
 import demonslayerwallpaper from "./wallpapers/demonslayerpic.jpg"
 import tpnwallpaper from './wallpapers/tpnpic.png'
-import jojowallpaper from './wallpapers/jojopic.webp'
+import jojowallpaper from './wallpapers/jojopic.jpeg'
 
 var classNames = require('classnames');
 
