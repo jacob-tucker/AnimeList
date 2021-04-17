@@ -10,6 +10,8 @@ import demonslayerwallpaper from "./wallpapers/demonslayerpic.jpg"
 import tpnwallpaper from './wallpapers/tpnpic.png'
 import jojowallpaper from './wallpapers/jojopic.jpeg'
 import opmwallpaper from './wallpapers/opmpic.png'
+import tgowwallpaper from './wallpapers/tgowpic.jpeg'
+import asvwallpaper from './wallpapers/asvpic.png'
 
 var classNames = require('classnames');
 
@@ -57,6 +59,8 @@ function App() {
           <option value="mushokutensei">Mushoku Tensei</option>
           <option value="jojo">Jojo's Bizarre Adventure</option>
           <option value="opm">One Punch Man</option>
+          <option value="tgow">The Garden of Words</option>
+          <option value="asv">A Silent Voice</option>
 
         </select>
       </div>
@@ -140,6 +144,24 @@ function App() {
             <p style={{ color: 'orange' }} className="Rating">8/10</p>
             <h1>One Punch Man</h1>
             <p style={{ color: 'orange' }} className="Reasoning">Hysterical and sick fights.</p>
+          </div>
+        </div>
+        {/* The Garden of Words */}
+        <div className="ListElement" id="tgow">
+          <img src={tgowwallpaper} alt="tgow wallpaper" />
+          <div className="Details">
+            <p className="Rating">8/10</p>
+            <h1 style={{ color: "lightgreen" }}>The Garden of Words</h1>
+            <p className="Reasoning">Wonderfully animated and meaningful story.</p>
+          </div>
+        </div>
+        {/* A Silent Voice */}
+        <div className="ListElement" id="asv">
+          <img src={asvwallpaper} alt="asv wallpaper" />
+          <div className="Details">
+            <p style={{ color: "#DB7093" }} className="Rating">9/10</p>
+            <h1 style={{ color: "white" }}>A Silent Voice</h1>
+            <p style={{ color: "#DB7093" }} className="Reasoning">Made me sob and beautiful story.</p>
           </div>
         </div>
       </div>
