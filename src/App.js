@@ -12,6 +12,8 @@ import jojowallpaper from './wallpapers/jojopic.jpeg'
 import opmwallpaper from './wallpapers/opmpic.png'
 import tgowwallpaper from './wallpapers/tgowpic.jpeg'
 import asvwallpaper from './wallpapers/asvpic.png'
+import codegeasswallpaper from './wallpapers/codegeasspic.jpeg'
+import yournamewallpaper from './wallpapers/yournamepic.png'
 
 var classNames = require('classnames');
 
@@ -46,32 +48,37 @@ function App() {
       <div className={classNames({ "Navbar-none": !navbar, "Navbar": navbar })}>
         <button onClick={() => zoom()}>Zoom to top ↑</button>
       </div>
-      <div className="Intro" id="intro">
-        <h1>Jacob's Anime List</h1>
-        <select name="animes" id="animeselector" onChange={() => scrollIt()}>
-          <option selected disabled>Choose an anime...</option>
-          <option value="mha">My Hero Academia</option>
-          <option value="tpn">The Promised Neverland</option>
-          <option value="aot">Attack on Titan</option>
-          <option value="jujutsukaisen">Jujutsu Kaisen</option>
-          <option value="demonslayer">Demon Slayer</option>
-          <option value="vinlandsaga">Vinland Saga</option>
-          <option value="mushokutensei">Mushoku Tensei</option>
-          <option value="jojo">Jojo's Bizarre Adventure</option>
-          <option value="opm">One Punch Man</option>
-          <option value="tgow">The Garden of Words</option>
-          <option value="asv">A Silent Voice</option>
-
-        </select>
+      <div className="Intro">
+        <div className="Intro-Top" id="intro">
+          <h1>Jacob's Anime List</h1>
+          <select name="animes" id="animeselector" onChange={() => scrollIt()}>
+            <option selected disabled>Choose an anime...</option>
+            <option value="mha">My Hero Academia</option>
+            <option value="tpn">The Promised Neverland</option>
+            <option value="aot">Attack on Titan</option>
+            <option value="jujutsukaisen">Jujutsu Kaisen</option>
+            <option value="demonslayer">Demon Slayer</option>
+            <option value="vinlandsaga">Vinland Saga</option>
+            <option value="mushokutensei">Mushoku Tensei</option>
+            <option value="jojo">Jojo's Bizarre Adventure</option>
+            <option value="opm">One Punch Man</option>
+            <option value="tgow">The Garden of Words</option>
+            <option value="asv">A Silent Voice</option>
+            <option value="yourname">Your Name</option>
+            <option value="codegeass">Code Geass</option>
+          </select>
+        </div>
+        <h3>Total # of anime: 13</h3>
+        <p>Listed in the order that I watched them.</p>
       </div>
       <div className="List">
         {/* My Hero Academia */}
         <div className="ListElement" id="mha">
           <img src={mhawallpaper} alt="mha wallpaper" />
           <div className="Details">
-            <p className="Rating">10/10</p>
+            <p className="Rating">9/10</p>
             <h1 style={{ color: "lightgreen" }}>My Hero Academia</h1>
-            <p className="Reasoning">My favorite anime of all time.</p>
+            <p className="Reasoning">My first ever anime.</p>
           </div>
         </div>
         {/* The Promised Neverland */}
@@ -87,9 +94,9 @@ function App() {
         <div className="ListElement" id="aot">
           <img src={aotwallpaper} alt="aot wallpaper" />
           <div className="Details">
-            <p className="Rating">10/10</p>
-            <h1 style={{ color: "lightcoral" }}>Attack on Titan</h1>
-            <p className="Reasoning">Incredible plot, characters, story progression, and fighting.</p>
+            <p style={{ color: "lightcoral" }} className="Rating">9.5/10</p>
+            <h1 style={{ color: "white" }}>Attack on Titan</h1>
+            <p style={{ color: "lightcoral" }} className="Reasoning">Incredible plot, characters, story progression, and fighting.</p>
           </div>
         </div>
         {/* Jujutsu Kaisen */}
@@ -98,23 +105,23 @@ function App() {
           <div className="Details">
             <p className="Rating">10/10</p>
             <h1 style={{ color: "black" }}>Jujutsu Kaisen</h1>
-            <p className="Reasoning">Sick fights, music, and animation.</p>
+            <p className="Reasoning">My favorite anime show of all time.</p>
           </div>
         </div>
         {/* Demon Slayer */}
         <div className="ListElement" id="demonslayer">
           <img src={demonslayerwallpaper} alt="demon slayer wallpaper" />
           <div className="Details">
-            <p style={{ color: "#2392A8" }} className="Rating">8/10</p>
+            <p style={{ color: "#2392A8" }} className="Rating">7.5/10</p>
             <h1 style={{ color: "#2ED7F9" }}>Demon Slayer</h1>
-            <p style={{ color: "#2392A8" }} className="Reasoning">Beautiful animation.</p>
+            <p style={{ color: "#2392A8" }} className="Reasoning">Beautiful animation, cool fights & moves.</p>
           </div>
         </div>
         {/* Vinland Saga */}
         <div className="ListElement" id="vinlandsaga">
           <img src={vinlandsagawallpaper} alt="vinland saga wallpaper" />
           <div className="Details">
-            <p className="Rating">8/10</p>
+            <p className="Rating">8.5/10</p>
             <h1 style={{ color: "yellow" }}>Vinland Saga</h1>
             <p className="Reasoning">Deep themes and great character arcs.</p>
           </div>
@@ -125,14 +132,14 @@ function App() {
           <div className="Details">
             <p className="Rating">9/10</p>
             <h1 style={{ color: "lightblue" }}>Mushoku Tensei</h1>
-            <p className="Reasoning">Unbelievably good animation and cool story.</p>
+            <p className="Reasoning">Unbelievably good animation and a nice adventure.</p>
           </div>
         </div>
         {/* Jojo's Bizarre Adventure */}
         <div className="ListElement" id="jojo">
           <img src={jojowallpaper} alt="jojo wallpaper" />
           <div className="Details">
-            <p className="Rating">8/10</p>
+            <p className="Rating">7.5/10</p>
             <h1><span style={{ color: "pink" }}>Jojo's </span><span style={{ color: "lightgreen" }}>Bizarre </span><span style={{ color: "yellow" }}>Adventure.</span></h1>
             <p style={{ color: "blue" }} className="Reasoning">A truly bizarre show.</p>
           </div>
@@ -150,7 +157,7 @@ function App() {
         <div className="ListElement" id="tgow">
           <img src={tgowwallpaper} alt="tgow wallpaper" />
           <div className="Details">
-            <p className="Rating">8/10</p>
+            <p className="Rating">7.5/10</p>
             <h1 style={{ color: "lightgreen" }}>The Garden of Words</h1>
             <p className="Reasoning">Wonderfully animated and meaningful story.</p>
           </div>
@@ -159,9 +166,27 @@ function App() {
         <div className="ListElement" id="asv">
           <img src={asvwallpaper} alt="asv wallpaper" />
           <div className="Details">
-            <p style={{ color: "#DB7093" }} className="Rating">9/10</p>
+            <p style={{ color: "#DB7093" }} className="Rating">10/10</p>
             <h1 style={{ color: "white" }}>A Silent Voice</h1>
-            <p style={{ color: "#DB7093" }} className="Reasoning">Made me sob and beautiful story.</p>
+            <p style={{ color: "#DB7093" }} className="Reasoning">My favorite anime movie. Made me sob and beautiful story.</p>
+          </div>
+        </div>
+        {/* Your Name */}
+        <div className="ListElement" id="yourname">
+          <img src={yournamewallpaper} alt="your name wallpaper" />
+          <div className="Details">
+            <p className="Rating">8.5/10</p>
+            <h1 style={{ color: "#3EEAED" }}>Your Name</h1>
+            <p className="Reasoning">Romance movies always get me.</p>
+          </div>
+        </div>
+        {/* Code Geass */}
+        <div className="ListElement" id="codegeass">
+          <img src={codegeasswallpaper} alt="code geass wallpaper" />
+          <div className="Details">
+            <p style={{ color: "black" }} className="Rating">9/10</p>
+            <h1 style={{ color: "white" }}>Code Geass</h1>
+            <p style={{ color: "black" }} className="Reasoning">Extremely well thought-out, every single character is good, no plot-holes.</p>
           </div>
         </div>
       </div>
