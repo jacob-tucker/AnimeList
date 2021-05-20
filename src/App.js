@@ -14,6 +14,7 @@ import tgowwallpaper from './wallpapers/tgowpic.jpeg'
 import asvwallpaper from './wallpapers/asvpic.png'
 import codegeasswallpaper from './wallpapers/codegeasspic.jpeg'
 import yournamewallpaper from './wallpapers/yournamepic.png'
+import deathnotewallpaper from './wallpapers/deathnotepic.jpeg'
 
 var classNames = require('classnames');
 
@@ -66,9 +67,10 @@ function App() {
             <option value="asv">A Silent Voice</option>
             <option value="yourname">Your Name</option>
             <option value="codegeass">Code Geass</option>
+            <option value="deathnote">Death Note</option>
           </select>
         </div>
-        <h3>Total # of anime: 13</h3>
+        <h3>Total # of anime: 14</h3>
         <p>Listed in the order that I watched them.</p>
       </div>
       <div className="List">
@@ -130,7 +132,7 @@ function App() {
         <div className="ListElement" id="mushokutensei">
           <img src={mushokutenseiwallpaper} alt="mushoku tensei wallpaper" />
           <div className="Details">
-            <p className="Rating">9/10</p>
+            <p className="Rating">8.5/10</p>
             <h1 style={{ color: "lightblue" }}>Mushoku Tensei</h1>
             <p className="Reasoning">Unbelievably good animation and a nice adventure.</p>
           </div>
@@ -175,7 +177,7 @@ function App() {
         <div className="ListElement" id="yourname">
           <img src={yournamewallpaper} alt="your name wallpaper" />
           <div className="Details">
-            <p className="Rating">8.5/10</p>
+            <p className="Rating">8/10</p>
             <h1 style={{ color: "#3EEAED" }}>Your Name</h1>
             <p className="Reasoning">Romance movies always get me.</p>
           </div>
@@ -187,6 +189,15 @@ function App() {
             <p style={{ color: "black" }} className="Rating">9/10</p>
             <h1 style={{ color: "white" }}>Code Geass</h1>
             <p style={{ color: "black" }} className="Reasoning">Extremely well thought-out, every single character is good, no plot-holes.</p>
+          </div>
+        </div>
+        {/* Death Note */}
+        <div className="ListElement" id="deathnote">
+          <img src={deathnotewallpaper} alt="death note wallpaper" />
+          <div className="Details">
+            <p style={{ color: "black" }} className="Rating">8.75/10</p>
+            <h1 style={{ color: "brown" }}>Death Note</h1>
+            <p style={{ color: "black" }} className="Reasoning">L is sick and the case is so fun to watch them solve.</p>
           </div>
         </div>
       </div>
