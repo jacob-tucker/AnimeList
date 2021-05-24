@@ -95,6 +95,11 @@ function App() {
         {/* Attack on Titan */}
         <div className="ListElement" id="aot">
           <img src={aotwallpaper} alt="aot wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "lightcoral", backgroundColor: "white" }}>
+              Best Story/Plot
+            </div>
+          </div>
           <div className="Details">
             <p style={{ color: "lightcoral" }} className="Rating">9.5/10</p>
             <h1 style={{ color: "white" }}>Attack on Titan</h1>
@@ -104,6 +109,11 @@ function App() {
         {/* Jujutsu Kaisen */}
         <div className="ListElement" id="jujutsukaisen">
           <img src={jujutsukaisenwallpaper} alt="jujutsu kaisen wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
+              Best Intro Song
+            </div>
+          </div>
           <div className="Details">
             <p className="Rating">9.75/10</p>
             <h1 style={{ color: "black" }}>Jujutsu Kaisen</h1>
@@ -122,15 +132,25 @@ function App() {
         {/* Vinland Saga */}
         <div className="ListElement" id="vinlandsaga">
           <img src={vinlandsagawallpaper} alt="vinland saga wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "white", backgroundColor: "#EEE034", fontSize: "12px" }}>
+              Best Character Progression
+            </div>
+          </div>
           <div className="Details">
             <p className="Rating">8.5/10</p>
-            <h1 style={{ color: "yellow" }}>Vinland Saga</h1>
+            <h1 style={{ color: "#EEE034" }}>Vinland Saga</h1>
             <p className="Reasoning">Deep themes and great character arcs.</p>
           </div>
         </div>
         {/* Mushoku Tensei */}
         <div className="ListElement" id="mushokutensei">
           <img src={mushokutenseiwallpaper} alt="mushoku tensei wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "lightblue", backgroundColor: "white" }}>
+              Best Animation
+            </div>
+          </div>
           <div className="Details">
             <p className="Rating">8.5/10</p>
             <h1 style={{ color: "lightblue" }}>Mushoku Tensei</h1>
@@ -149,6 +169,11 @@ function App() {
         {/* One Punch Man */}
         <div className="ListElement" id="opm">
           <img src={opmwallpaper} alt="opm wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "orange", backgroundColor: "black" }}>
+              Best Comedy
+            </div>
+          </div>
           <div className="Details">
             <p style={{ color: 'orange' }} className="Rating">8/10</p>
             <h1>One Punch Man</h1>
@@ -167,10 +192,18 @@ function App() {
         {/* A Silent Voice */}
         <div className="ListElement" id="asv">
           <img src={asvwallpaper} alt="asv wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "white", backgroundColor: "#DB7093" }}>
+              Highest Rating
+            </div>
+            <div className="tag" style={{ color: "white", backgroundColor: "#DB7093" }}>
+              Best Anime Film
+            </div>
+          </div>
           <div className="Details">
             <p style={{ color: "#DB7093" }} className="Rating">10/10</p>
             <h1 style={{ color: "white" }}>A Silent Voice</h1>
-            <p style={{ color: "#DB7093" }} className="Reasoning">My favorite anime movie. Made me sob and beautiful story.</p>
+            <p style={{ color: "#DB7093" }} className="Reasoning">My favorite anime film. Made me sob and beautiful story.</p>
           </div>
         </div>
         {/* Your Name */}
@@ -185,6 +218,11 @@ function App() {
         {/* Code Geass */}
         <div className="ListElement" id="codegeass">
           <img src={codegeasswallpaper} alt="code geass wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
+              Best Characters
+            </div>
+          </div>
           <div className="Details">
             <p style={{ color: "black" }} className="Rating">9.25/10</p>
             <h1 style={{ color: "white" }}>Code Geass</h1>
@@ -194,6 +232,11 @@ function App() {
         {/* Death Note */}
         <div className="ListElement" id="deathnote">
           <img src={deathnotewallpaper} alt="death note wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "black", backgroundColor: "brown" }}>
+              Best Soundtrack
+            </div>
+          </div>
           <div className="Details">
             <p style={{ color: "black" }} className="Rating">8.75/10</p>
             <h1 style={{ color: "brown" }}>Death Note</h1>
