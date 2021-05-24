@@ -105,7 +105,7 @@ function App() {
         <div className="ListElement" id="jujutsukaisen">
           <img src={jujutsukaisenwallpaper} alt="jujutsu kaisen wallpaper" />
           <div className="Details">
-            <p className="Rating">10/10</p>
+            <p className="Rating">9.75/10</p>
             <h1 style={{ color: "black" }}>Jujutsu Kaisen</h1>
             <p className="Reasoning">My favorite anime show of all time.</p>
           </div>
@@ -186,7 +186,7 @@ function App() {
         <div className="ListElement" id="codegeass">
           <img src={codegeasswallpaper} alt="code geass wallpaper" />
           <div className="Details">
-            <p style={{ color: "black" }} className="Rating">9/10</p>
+            <p style={{ color: "black" }} className="Rating">9.25/10</p>
             <h1 style={{ color: "white" }}>Code Geass</h1>
             <p style={{ color: "black" }} className="Reasoning">Extremely well thought-out, every single character is good, no plot-holes.</p>
           </div>
