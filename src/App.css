@@ -135,6 +135,14 @@
   margin: 5px 0 5px 0;
 }
 
+@media all and (max-width: 600px) {
+  .List .ListElement .tags {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .List .ListElement .Details {
   top: 50%;
   left: 50%;
@@ -166,6 +174,7 @@
 
 .List .ListElement .Details h1 {
   font-size: 50px;
+  text-align: center;
 }
 
 .List .ListElement .Details .Reasoning {
