@@ -238,7 +238,7 @@ function App() {
             </div>
           </div>
           <div className="Details">
-            <p style={{ color: "black" }} className="Rating">8.75/10</p>
+            <p style={{ color: "black" }} className="Rating">9/10</p>
             <h1 style={{ color: "brown" }}>Death Note</h1>
             <p style={{ color: "black" }} className="Reasoning">L is sick and the case is so fun to watch them solve.</p>
           </div>
