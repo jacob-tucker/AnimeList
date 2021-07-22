@@ -115,6 +115,9 @@ function App() {
             <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
               Best OP Song
             </div>
+            <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
+              Best Anime Show
+            </div>
           </div>
           <div className="Details">
             <p className="Rating">9.75/10</p>
