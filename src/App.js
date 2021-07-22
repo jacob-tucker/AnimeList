@@ -5,7 +5,7 @@ import mhawallpaper from './wallpapers/mhapic.png'
 import aotwallpaper from "./wallpapers/aotpic.jpeg"
 import jujutsukaisenwallpaper from "./wallpapers/jujutsukaisenpic.jpg"
 import mushokutenseiwallpaper from "./wallpapers/mushokutenseipic.jpeg"
-import vinlandsagawallpaper from "./wallpapers/vinlandsagapic.jpeg"
+import vinlandsagawallpaper from "./wallpapers/vinlandsagapic.png"
 import demonslayerwallpaper from "./wallpapers/demonslayerpic.jpg"
 import tpnwallpaper from './wallpapers/tpnpic.png'
 import jojowallpaper from './wallpapers/jojopic.jpeg'
@@ -15,6 +15,7 @@ import asvwallpaper from './wallpapers/asvpic.png'
 import codegeasswallpaper from './wallpapers/codegeasspic.jpeg'
 import yournamewallpaper from './wallpapers/yournamepic.png'
 import deathnotewallpaper from './wallpapers/deathnotepic.jpeg'
+import cowboybebopwallpaper from './wallpapers/cowboybeboppic.jpeg'
 
 var classNames = require('classnames');
 
@@ -68,9 +69,10 @@ function App() {
             <option value="yourname">Your Name</option>
             <option value="codegeass">Code Geass</option>
             <option value="deathnote">Death Note</option>
+            <option value="cowboybebop">Cowboy Bebop</option>
           </select>
         </div>
-        <h3>Total # of anime: 14</h3>
+        <h3>Total # of anime: 15</h3>
         <p>Listed in the order that I watched them.</p>
       </div>
       <div className="List">
@@ -111,7 +113,7 @@ function App() {
           <img src={jujutsukaisenwallpaper} alt="jujutsu kaisen wallpaper" />
           <div className="tags">
             <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
-              Best Intro Song
+              Best OP Song
             </div>
           </div>
           <div className="Details">
@@ -134,7 +136,7 @@ function App() {
           <img src={vinlandsagawallpaper} alt="vinland saga wallpaper" />
           <div className="tags">
             <div className="tag" style={{ color: "white", backgroundColor: "#EEE034", fontSize: "12px" }}>
-              Best Character Progression
+              Best Character Arcs
             </div>
           </div>
           <div className="Details">
@@ -219,13 +221,13 @@ function App() {
         <div className="ListElement" id="codegeass">
           <img src={codegeasswallpaper} alt="code geass wallpaper" />
           <div className="tags">
-            <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
+            <div className="tag" style={{ color: "black", backgroundColor: "purple" }}>
               Best Characters
             </div>
           </div>
           <div className="Details">
             <p style={{ color: "black" }} className="Rating">9.25/10</p>
-            <h1 style={{ color: "white" }}>Code Geass</h1>
+            <h1 style={{ color: "purple" }}>Code Geass</h1>
             <p style={{ color: "black" }} className="Reasoning">Extremely well thought-out, every single character is good, no plot-holes.</p>
           </div>
         </div>
@@ -241,6 +243,23 @@ function App() {
             <p style={{ color: "black" }} className="Rating">9/10</p>
             <h1 style={{ color: "brown" }}>Death Note</h1>
             <p style={{ color: "black" }} className="Reasoning">L is sick and the case is so fun to watch them solve.</p>
+          </div>
+        </div>
+        {/* Cowboy Bebop */}
+        <div className="ListElement" id="cowboybebop">
+          <img src={cowboybebopwallpaper} alt="cowboy bebop wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "black", backgroundColor: "yellow" }}>
+              Best OP
+            </div>
+            <div className="tag" style={{ color: "black", backgroundColor: "yellow" }}>
+              Best Ending
+            </div>
+          </div>
+          <div className="Details">
+            <p style={{ color: "black" }} className="Rating">8.5/10</p>
+            <h1 style={{ color: "yellow" }}>Cowboy Bebop</h1>
+            <p style={{ color: "black" }} className="Reasoning">Funny, tragic, beautiful, artsy, and real. Fantastic ending.</p>
           </div>
         </div>
       </div>
