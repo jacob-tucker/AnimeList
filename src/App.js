@@ -16,6 +16,7 @@ import codegeasswallpaper from './wallpapers/codegeasspic.jpeg'
 import yournamewallpaper from './wallpapers/yournamepic.png'
 import deathnotewallpaper from './wallpapers/deathnotepic.jpeg'
 import cowboybebopwallpaper from './wallpapers/cowboybeboppic.jpeg'
+import erasedwallpaper from './wallpapers/erasedpic.jpeg'
 
 var classNames = require('classnames');
 
@@ -70,9 +71,10 @@ function App() {
             <option value="codegeass">Code Geass</option>
             <option value="deathnote">Death Note</option>
             <option value="cowboybebop">Cowboy Bebop</option>
+            <option value="erased">Erased</option>
           </select>
         </div>
-        <h3>Total # of anime: 15</h3>
+        <h3>Total # of anime: 16</h3>
         <p>Listed in the order that I watched them.</p>
       </div>
       <div className="List">
@@ -263,6 +265,15 @@ function App() {
             <p style={{ color: "black" }} className="Rating">8.5/10</p>
             <h1 style={{ color: "yellow" }}>Cowboy Bebop</h1>
             <p style={{ color: "black" }} className="Reasoning">Funny, tragic, beautiful, artsy, and real. Fantastic ending.</p>
+          </div>
+        </div>
+        {/* Erased */}
+        <div className="ListElement" id="erased">
+          <img src={erasedwallpaper} alt="erased wallpaper" />
+          <div className="Details">
+            <p className="Rating">8.75/10</p>
+            <h1 style={{ color: "#195F87" }}>Erased</h1>
+            <p className="Reasoning">Really well animated & hit me right in the heart.</p>
           </div>
         </div>
       </div>
