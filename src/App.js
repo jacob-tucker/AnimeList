@@ -129,7 +129,7 @@ function App() {
           <div className="Details">
             <p className="Rating">9.75/10</p>
             <h1 style={{ color: "black" }}>Jujutsu Kaisen</h1>
-            <p className="Reasoning">My favorite anime show of all time.</p>
+            <p className="Reasoning">Freaking awesome. Damn near masterpiece.</p>
           </div>
         </div>
         {/* Demon Slayer */}
