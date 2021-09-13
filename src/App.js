@@ -17,6 +17,10 @@ import yournamewallpaper from './wallpapers/yournamepic.png'
 import deathnotewallpaper from './wallpapers/deathnotepic.jpeg'
 import cowboybebopwallpaper from './wallpapers/cowboybeboppic.jpeg'
 import erasedwallpaper from './wallpapers/erasedpic.jpeg'
+import weatheringwithyouwallpaper from './wallpapers/weatheringwithyoupic.jpeg'
+import madeinabysswallpaper from './wallpapers/madeinabysspic.jpg'
+import tmdbuwallpaper from './wallpapers/tmdbupic.jpeg'
+import tokyorevengerswallpaper from './wallpapers/tokyorevengerspic.jpeg'
 
 var classNames = require('classnames');
 
@@ -72,9 +76,13 @@ function App() {
             <option value="deathnote">Death Note</option>
             <option value="cowboybebop">Cowboy Bebop</option>
             <option value="erased">Erased</option>
+            <option value="weatheringwithyou">Weathering with You</option>
+            <option value="madeinabyss">Made in Abyss</option>
+            <option value="tmdbu">The Millionaire Detective Balance: UNLIMITED</option>
+            <option value="tokyorevengers">Tokyo Revengers</option>
           </select>
         </div>
-        <h3>Total # of anime: 16</h3>
+        <h3>Total # of anime: 20</h3>
         <p>Listed in the order that I watched them.</p>
       </div>
       <div className="List">
@@ -91,7 +99,7 @@ function App() {
         <div className="ListElement" id="tpn">
           <img src={tpnwallpaper} alt="tpn wallpaper" />
           <div className="Details">
-            <p style={{ color: "darkgrey" }} className="Rating">8/10</p>
+            <p style={{ color: "darkgrey" }} className="Rating">7/10</p>
             <h1 style={{ color: "grey" }}>The Promised Neverland</h1>
             <p style={{ color: "darkgrey" }} className="Reasoning">Cool, sweet, & creepy plot.</p>
           </div>
@@ -117,9 +125,6 @@ function App() {
             <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
               Best OP Song
             </div>
-            <div className="tag" style={{ color: "black", backgroundColor: "white" }}>
-              Best Anime Show
-            </div>
           </div>
           <div className="Details">
             <p className="Rating">9.75/10</p>
@@ -131,7 +136,7 @@ function App() {
         <div className="ListElement" id="demonslayer">
           <img src={demonslayerwallpaper} alt="demon slayer wallpaper" />
           <div className="Details">
-            <p style={{ color: "#2392A8" }} className="Rating">7.5/10</p>
+            <p style={{ color: "#2392A8" }} className="Rating">7/10</p>
             <h1 style={{ color: "#2ED7F9" }}>Demon Slayer</h1>
             <p style={{ color: "#2392A8" }} className="Reasoning">Beautiful animation, cool fights & moves.</p>
           </div>
@@ -145,7 +150,7 @@ function App() {
             </div>
           </div>
           <div className="Details">
-            <p className="Rating">8.5/10</p>
+            <p className="Rating">8/10</p>
             <h1 style={{ color: "#EEE034" }}>Vinland Saga</h1>
             <p className="Reasoning">Deep themes and great character arcs.</p>
           </div>
@@ -159,7 +164,7 @@ function App() {
             </div>
           </div>
           <div className="Details">
-            <p className="Rating">8.5/10</p>
+            <p className="Rating">8/10</p>
             <h1 style={{ color: "lightblue" }}>Mushoku Tensei</h1>
             <p className="Reasoning">Unbelievably good animation and a nice adventure.</p>
           </div>
@@ -168,7 +173,7 @@ function App() {
         <div className="ListElement" id="jojo">
           <img src={jojowallpaper} alt="jojo wallpaper" />
           <div className="Details">
-            <p className="Rating">7.5/10</p>
+            <p className="Rating">7/10</p>
             <h1><span style={{ color: "pink" }}>Jojo's </span><span style={{ color: "lightgreen" }}>Bizarre </span><span style={{ color: "yellow" }}>Adventure.</span></h1>
             <p style={{ color: "blue" }} className="Reasoning">A truly bizarre show.</p>
           </div>
@@ -182,7 +187,7 @@ function App() {
             </div>
           </div>
           <div className="Details">
-            <p style={{ color: 'orange' }} className="Rating">8/10</p>
+            <p style={{ color: 'orange' }} className="Rating">7.5/10</p>
             <h1>One Punch Man</h1>
             <p style={{ color: 'orange' }} className="Reasoning">Hysterical and sick fights.</p>
           </div>
@@ -191,7 +196,7 @@ function App() {
         <div className="ListElement" id="tgow">
           <img src={tgowwallpaper} alt="tgow wallpaper" />
           <div className="Details">
-            <p className="Rating">7.5/10</p>
+            <p className="Rating">7/10</p>
             <h1 style={{ color: "lightgreen" }}>The Garden of Words</h1>
             <p className="Reasoning">Wonderfully animated and meaningful story.</p>
           </div>
@@ -217,7 +222,7 @@ function App() {
         <div className="ListElement" id="yourname">
           <img src={yournamewallpaper} alt="your name wallpaper" />
           <div className="Details">
-            <p className="Rating">8/10</p>
+            <p className="Rating">7.5/10</p>
             <h1 style={{ color: "#3EEAED" }}>Your Name</h1>
             <p className="Reasoning">Romance movies always get me.</p>
           </div>
@@ -231,7 +236,7 @@ function App() {
             </div>
           </div>
           <div className="Details">
-            <p style={{ color: "black" }} className="Rating">9.25/10</p>
+            <p style={{ color: "black" }} className="Rating">9/10</p>
             <h1 style={{ color: "purple" }}>Code Geass</h1>
             <p style={{ color: "black" }} className="Reasoning">Extremely well thought-out, every single character is good, no plot-holes.</p>
           </div>
@@ -271,9 +276,53 @@ function App() {
         <div className="ListElement" id="erased">
           <img src={erasedwallpaper} alt="erased wallpaper" />
           <div className="Details">
-            <p className="Rating">8.75/10</p>
+            <p className="Rating">8.5/10</p>
             <h1 style={{ color: "#195F87" }}>Erased</h1>
             <p className="Reasoning">Really well animated & hit me right in the heart.</p>
+          </div>
+        </div>
+        {/* Weathering with You */}
+        <div className="ListElement" id="weatheringwithyou">
+          <img src={weatheringwithyouwallpaper} alt="weathering with you wallpaper" />
+          <div className="Details">
+            <p className="Rating" style={{ color: "grey" }}>8/10</p>
+            <h1 style={{ color: "lightblue" }}>Weathering with You</h1>
+            <p className="Reasoning" style={{ color: "grey" }}>Better than Your Name, very cute story.</p>
+          </div>
+        </div>
+        {/* Made in Abyss */}
+        <div className="ListElement" id="madeinabyss">
+          <img src={madeinabysswallpaper} alt="made in abyss wallpaper" />
+          <div className="Details">
+            <p className="Rating" style={{ color: "#E8C66F" }}>8.5/10</p>
+            <h1 style={{ color: "#C4D0C7" }}>Made in Abyss</h1>
+            <p className="Reasoning" style={{ color: "#E8C66F" }}>Love the adventure aspect and soundtrack.</p>
+          </div>
+        </div>
+        {/* The Millionaire Detective Balance: UNLIMITED */}
+        <div className="ListElement" id="tmdbu">
+          <img src={tmdbuwallpaper} alt="tmdbu wallpaper" />
+          <div className="Details">
+            <p className="Rating" style={{ color: "black" }}>8.5/10</p>
+            <h1 style={{ color: "white" }}>The Millionaire Detective Balance: UNLIMITED</h1>
+            <p className="Reasoning" style={{ color: "black" }}>Super fun & short anime.</p>
+          </div>
+        </div>
+        {/* Tokyo Revengers */}
+        <div className="ListElement" id="tokyorevengers">
+          <img src={tokyorevengerswallpaper} alt="tokyo revengers wallpaper" />
+          <div className="tags">
+            <div className="tag" style={{ color: "black", backgroundColor: "gold" }}>
+              Highest Rating
+            </div>
+            <div className="tag" style={{ color: "black", backgroundColor: "gold" }}>
+              Best Anime Show
+            </div>
+          </div>
+          <div className="Details">
+            <p className="Rating" style={{ color: "black" }}>10/10</p>
+            <h1 style={{ color: "gold" }}>Tokyo Revengers</h1>
+            <p className="Reasoning" style={{ color: "black" }}>My favorite anime ever.</p>
           </div>
         </div>
       </div>
